@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
 
-        // grouping the elemnts of list using stream api
+        // grouping the elements of list using stream api
         List<String> list = Arrays.asList("apple", "bat", "cat", "banana", "dog");
         Map<Integer, List<String>> collect = list.stream().collect(Collectors.groupingBy(String::length));
         System.out.println(collect);
@@ -48,7 +48,7 @@ public class Main {
 
 
 
-        // jagged arrayy with differenct column size
+        // jagged array with different column size
 
         int[][] arr = {{4, 5, 6}, {1, 2}, {100, 250, 412, 456}};
 
@@ -80,6 +80,9 @@ public class Main {
             left++;
             right--;
         }
+
+
+        // Added some lines
 
 
 
